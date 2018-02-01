@@ -1,0 +1,101 @@
+matchId,team,win_lose,date(m/d/y),inns
+ODI no. 2952,Australia,win,2/9/10,2
+ODI no. 2952,West Indies,lose,2/9/10,1
+ODI no. 2908,Zimbabwe,win,10/12/09,1
+ODI no. 2908,Kenya,lose,10/12/09,2
+ODI no. 2913,Australia,win,10/25/09,1
+ODI no. 2913,india,lose,10/25/09,2
+ODI no. 2914,Zimbabwe,win,10/27/09,2
+ODI no. 2914,Bangladesh,lose,10/27/09,1
+ODI no. 2697,West Indies,win,4/10/08,2
+ODI no. 2697,Sri Lanka,lose,4/10/08,1
+ODI no. 2696,Pakistan,win,9/17/17,1
+ODI no. 2696,Bangladesh,lose,9/17/17,2
+ODI no. 2693,Bangladesh,win,3/18/08,2
+ODI no. 2693,Ireland,lose,3/18/08,1
+ODI no. 2690,South Africa,win,3/9/08,2
+ODI no. 2690,Bangladesh,lose,3/9/08,1
+ODI no. 2674,New Zealand,win,2/9/08,2
+ODI no. 2674,England,lose,2/9/08,1
+ODI no. 2633,South Africa,win,10/18/07,1
+ODI no. 2633,Pakistan,lose,10/18/07,2
+ODI no. 2638,Kenya,win,10/25/07,2
+ODI no. 2638,Bermuda,lose,10/25/07,1
+ODI no. 3817,Australia,win,1/13/17,1
+ODI no. 3817,Pakistan,lose,1/13/17,2
+ODI no. 3845,England,win,3/3/17,1
+ODI no. 3845,West Indies,lose,3/3/17,2
+ODI no. 3654,England,win,6/9/15,1
+ODI no. 3654,New Zealand,lose,6/9/15,2
+ODI no. 3673,Zimbabwe,win,8/2/15,1
+ODI no. 3673,New Zealand,lose,8/2/15,2
+ODI no. 3647,Bangladesh,win,4/17/15,1
+ODI no. 3647,Pakistan,lose,4/17/15,2
+ODI no. 3438,Pakistan,win,11/24/13,1
+ODI no. 3438,South Africa,lose,11/24/13,2
+ODI no. 3477,West Indies,win,2/28/14,1
+ODI no. 3477,England,lose,2/28/14,2
+ODI no. 3436,India,win,11/21/13,2
+ODI no. 3436,West Indies,lose,11/21/13,1
+ODI no. 3449,West Indies,win,12/26/13,2
+ODI no. 3449,New Zealand�,lose,12/26/13,1
+ODI no. 3473,Sri Lanka,win,2/25/14,1
+ODI no. 3473,Pakistan,lose,2/25/14,2
+ODI no. 3469,Sri Lanka,win,2/17/14,1
+ODI no. 3469,Bangladesh,lose,2/17/14,2
+ODI no. 3423,Bangladesh,win,10/29/13,1
+ODI no. 3423,New Zealand,lose,10/29/13,2
+ODI no. 3389,Pakistan,win,6/14/13,1
+ODI no. 3389,West Indies,lose,6/14/13,2
+ODI no. 3353,Bangladesh,win,5/3/13,1
+ODI no. 3353,Zimbabwe,lose,5/3/13,2
+ODI no. 3739,West Indies,win,6/3/16,2
+ODI no. 3739,South Africa,lose,6/3/16,1
+ODI no. 3740,Australia,win,6/5/16,2
+ODI no. 3740,West Indies,lose,6/5/16,1
+ODI no. 3741,Australia,win,6/7/16,1
+ODI no. 3741,South Africa,lose,6/7/16,2
+ODI no. 3309,Bangladesh,win,11/30/12,2
+ODI no. 3309,West Indies,lose,11/30/12,1
+ODI no. 3305,Sri Lanka,win,11/4/12,2
+ODI no. 3305,New Zealand,lose,11/4/12,1
+ODI no. 3333,Australia,win,2/8/13,2
+ODI no. 3333,West Indies,lose,2/8/13,1
+ODI no. 3343,South Africa,win,3/10/13,1
+ODI no. 3343,Pakistan,lose,3/10/13,2
+ODI no. 3337,West Indies,win,2/22/13,1
+ODI no. 3337,Zimbabwe,lose,2/22/13,2
+ODI no. 3320,India,win,15/1/13,1
+ODI no. 3320,England,lose,15/1/13,2
+ODI no. 3311,West Indies,win,12/5/12,2
+ODI no. 3311,Bangladesh,lose,12/5/12,1
+ODI no. 3149,Australia,win,4/9/11,1
+ODI no. 3149,Bangladesh,lose,4/9/11,2
+ODI no. 3159,India,win,6/6/11,2
+ODI no. 3159,West Indies,lose,6/6/11,1
+ODI no. 3185,England,win,9/25/11,1
+ODI no. 3185,Ireland,lose,9/25/11,2
+ODI no. 2979,South Africa,win,5/22/10,1
+ODI no. 2979,West Indies,lose,5/22/10,2
+ODI no. 2997,England,win,6/19/10,2
+ODI no. 2997,Scotland,lose,6/19/10,1
+ODI no. 3005,Afghanistan,win,7/1/10,2
+ODI no. 3005,Canada,lose,7/1/10,1
+ODI no. 3027,Ireland,win,7/15/10,2
+ODI no. 3027,Bangladesh,lose,7/15/10,1
+ODI no. 3029,Netherlands,win,7/20/10,2
+ODI no. 3029,Bangladesh,lose,7/20/10,1
+ODI no. 3680,Australia,win,9/3/15,1
+ODI no. 3680,England,lose,9/3/15,2
+ODI no. 3679,Australia,win,8/27/15,1
+ODI no. 3679,Ireland,lose,8/27/15,2
+ODI no. 3664,Pakistan,win,7/11/15,2
+ODI no. 3664,Sri Lanka,lose,7/11/15,1
+ODI no. 3663,South Africa,win,7/10/15,2
+ODI no. 3663,Bangladesh,lose,7/10/15,1
+ODI no. 3861,West Indies,win,4/7/17,2
+ODI no. 3861,Pakistan,lose,4/7/17,1
+ODI no. 3872,England,win,5/24/17,1
+ODI no. 3872,South Africa,lose,5/24/17,2
+ODI no. 3900,West Indies,win,7/2/17,1
+ODI no. 3900,India,lose,7/2/17,2
