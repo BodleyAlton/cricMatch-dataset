@@ -23,6 +23,38 @@ primary key(matchId,plid),
 foreign key (matchId) references matches(matchId) on delete cascade on update cascade 
 );
 
+create table match_bat_stats(
+matchId varchar(13) not null,
+plid int not null,
+outt varchar(4),
+out_by int,
+strRate float,
+movers int,
+b_faced int,
+runs int,
+fours int,
+sixes int,
+primary key(matchId,plid),
+foreign key (matchId,plid) references player(matchId,plid) on delete cascade on update cascade
+);
+
+create table match_bow_stats(
+matchId varchar(13) not null,
+plid int not null,
+noBall int,
+overs int,
+movers int,
+runs_c int,
+wickets int,
+econ int,
+zero int,
+fours int,
+sixes int,
+wides int,
+primary key(matchId,plid),
+foreign key (matchId,plid) references player(matchId,plid) on delete cascade on update cascade
+);
+
 create table venue(
 matchId varchar(13) not null,
 venue varchar(50),

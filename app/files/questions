@@ -1,0 +1,6 @@
+Data trans
+1. Mereg player_stats and match_data datasets
+Analysis Ques
+1. What is the most frequent compositiom (freqComp) of teams?
+2. Does every team that uses freqComp always beats every team that doesnt?
+3. For two teams that have the same composition; what makes one team win against the other?

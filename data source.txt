@@ -2,3 +2,5 @@ Matches (ONE DAY INTERNATIONALS) - http://www.espncricinfo.com/ci/engine/series/
 
 Starting gunicorn - gunicorn app:app -t 1800 <<-t int -> time out in s>> 
 Using curl to make request - curl http://croc-match-dataset-altonbodley.c9users.io:8080/run 
+
+Python Visulization- matplotlib - https://matplotlib.org/users/installing.html
