@@ -58,7 +58,7 @@ class MatchBatStats(db.Model):
        self.b_faced=b_faced
        self.runs=runs
        self.fours=fours
-       self.sixes
+       self.sixes=sixes
 
 class MatchBowStats(db.Model):
     matchId= db.Column(db.String(13),db.ForeignKey('matches.matchId'),primary_key=True)

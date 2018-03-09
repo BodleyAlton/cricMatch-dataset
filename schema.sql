@@ -1,6 +1,7 @@
 DROP DATABASE IF EXISTS matchStats;
 CREATE DATABASE matchStats;
 use matchStats;
+
 create table matches(
 matchId varchar(13) not null,
 team varchar(50),

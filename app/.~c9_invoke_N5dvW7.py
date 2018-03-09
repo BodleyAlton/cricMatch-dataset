@@ -96,68 +96,58 @@ def matchStats():
     tree=html.fromstring(page.content)
     i=0
     while i <2:
-        # print "top"
-        name1= tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[1]/div[2]/div[1]/a/text()"%(i))[0]
+        name1= tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[1]/div[2]/div[1]/a/text()"%(i))
         plid=extPlid(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[1]/div[2]/div[1]/a/@href"%(i))[0])
         out1= tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[1]/div[2]/div[2]/a/text()"%(i))
-        out_by=str((out1[0].split(" "))[-1]).translate(None,")")
-        out=str((out1[0].split(" "))[0])
+        out_by=(out1[0].split(" "))[-1]
+        out=(out1[0].split(" "))[0]
         stats=tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[1]/div[2]/div[@class='cell runs']/text()"%(i))
         plyr_Bat.append([name1,plid,out_by,out,stats])
         x=2
         while x < (len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[@class='flex-row']"%i))-2):
-            # print "X:",x
             Name=tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[%i]/div[1]/div[1]/a/text()"%(i,x))
-            if Name != []:
-                # print "b4 plid"
-                plid1=extPlid(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[%i]/div[1]/div[1]/a/@href"%(i,x))[0])
-                Outb=(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[%i]/div[1]/div[2]/a/text()"%(i,x)))#.translate(None, '\ u 2020')
-                if Outb != []:
-                    outm=str((Outb[0].split(" "))[0])
-                    Outb=str((Outb[0].split(" "))[-1]).translate(None,"( )")
-                else:
-                    Outb=None
+            plid1=extPlid(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[%i]/div[1]/div[1]/a/text()"%(i,x)) )
+            Outb=(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[%i]/div[1]/div[2]/a/text()"%(i,x)))#.translate(None, '\ u 2020')
+            if Outb != []:
+                outm=(Outb[0].split(" "))[0]
+                Outb=(Outb[0].split(" "))[-1]
                 Stats=tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section batsmen']/div[%i]/div[1]/div[@class='cell runs']/text()"%(i,x))
-                plyr_Bat.append([Name[0],plid1,Outb,outm,Stats])
-                Name=None
-                plid1=None
-                Outb=None
-                Stats=None
-                outm=None
+                print "Name:",Name
+                print "plid1:",plid1
+                print "Outb:",Outb
+                print "stats:",Stats
+                plyr_Bat.append([Name,plid1,Outb,outm,Stats])
             x+=1
         i+=1
-    Stat=[]
-    plyr_Bow=[]
-    i=0
-    while i <2:
-        # print "LEN td:",len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr"%(i)))
-        t=1
-        while t < (len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr"%(i)))+1):
-            name1= tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[%i]/td[1]/a/text()"%(i,t))
-            plid=extPlid(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[%i]/td[1]/a/@href"%(i,t))[0])
-            p=3
-            while p < (len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[1]/td"%(i)))):
-                stats=tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[%i]/td[%i]/text()"%(i,t,p))[0]
-                Stat.append(stats)
-                p+=1
-            plyr_Bow.append([name1[0],plid,Stat])
-            Stat=[]
-            t+=1
-        i+=1
+    # Stat=[]
+    # plyr_Bow=[]
+    # i=0
+    # while i <2:
+    #     print "LEN td:",len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr"%(i)))
+    #     t=1
+    #     while t < (len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr"%(i)))+1):
+    #         name1= tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[%i]/td[1]/a/text()"%(i,t))
+    #         plid=extPlid(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[%i]/td[1]/a/@href"%(i,t))[0])
+    #         p=3
+    #         while p < (len(tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[1]/td"%(i)))):
+    #             stats=tree.xpath("//div[@id='gp-inning-0%i']/div[@class='scorecard-section bowling']/table/tbody/tr[%i]/td[%i]/text()"%(i,t,p))[0]
+    #             Stat.append(stats)
+    #             p+=1
+    #         plyr_Bow.append([name1,plid,Stat])
+    #         Stat=[]
+    #         t+=1
+    #     i+=1
     print "BOWS:",plyr_Bow 
     for p in plyr_Bat:
-        # print "p:",(str(p[2]).split(" "))[-1]
-        for b in plyr_Bat:
-            # print "b:",b[0]
-            if (str(p[2]).split(" "))[-1] in b[0]:
-                # print "found"
+        for b in plyr_Bow:
+            if str(p[2]) in str(b[0][0]):
                 p.append(b[1])
     print "BAT:",plyr_Bat
     
-    for p in plyr_Bat:
-        updateMBS(matchid,p)
-    for z in plyr_Bow:
-        updateMBoS(matchid,z)
+    # for p in plyr_Bat:
+    #     updateMBS(matchid,p)
+    # for z in plyr_Bow:
+    #     updateMBoS(matchid,z)
     return "LA"
     
 def updateMBoS(matchid,z):
@@ -174,7 +164,7 @@ def updateMBoS(matchid,z):
     sixes=stats[7]
     wides=stats[8]
     noBall=stats[9]
-    player= MatchBowStats(matchid,plid,noBall,overs,movers,runs_c,wickets,econ,zero,fours,sixes,wides)
+    player= MatchBowStats(matchId,plid,noBall,overs,movers,runs_c,wickets,econ,zero,fours,sixes,wides)
     db.session.add(player)
     db.session.commit()
     
@@ -184,10 +174,8 @@ def updateMBS(matchid,pl):
     out_by=pl[2]
     outm=pl[3]
     oplid=pl[-1]
-    Stats=pl[4]
+    Stats=pl[-2]
     print "STATS:",Stats
-    print "S4:",Stats[4]
-    print "S5:",Stats[5]
     strRate=Stats[5]
     movers=Stats[1]
     b_faced=Stats[2]
